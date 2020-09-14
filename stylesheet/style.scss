@@ -1,0 +1,189 @@
+@charset 'UTF-8';
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    line-height: 1.7;
+    color: #432;
+}
+a{
+    text-decoration: none;    
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+//wrapper
+.wrapper{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 4%;//スマートフォン向け余白の指定
+}
+
+//ヘッダー部分
+.logo{
+    width: 210px;
+    margin-top: 14px;
+}
+.main-nav{
+    display: flex;
+    text-transform: uppercase;//これで大文字になる
+    margin-top: 34px;
+    font-size: 1.25rem;
+    li{
+        margin-left: 36px;
+    }
+    a{
+        color: #432;
+        &:hover{
+            color: #0bd;
+        }
+    }
+}
+.page-header{
+    display: flex;
+    justify-content: space-between;//これで両端寄せできる
+}
+
+.home-content{
+    text-align: center;
+    margin-top: 10%;
+    p{
+        font-size: 1.125rem;
+        margin: 10px 0 42px;
+    }
+}
+.page-title{
+    @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+    font-size: 5rem;
+    font-family: 'Philosopher',"serif";
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.button{
+    background-color: #0bd;
+    color: white;
+    border-radius: 5px;
+    padding: 18px 32px;
+    &:hover{
+        background-color: #0090aa;
+    }
+}
+#home{
+    //background-image: url(./images/main-bg.jpg);
+    min-height: 100vh;
+    //background-color: palevioletred;
+    //background-blend-mode: hard-light;
+    background-image: url(./images/main-bg.jpg),radial-gradient(#c9ffbf,#ffafbd);
+    background-blend-mode: luminosity;
+    .page-title{
+        text-transform: none;
+    }
+}
+.big-bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center top;
+}
+
+//----------------------News--------------------------
+
+#news{
+    background-image: url(./images/news-bg.jpg);
+    height: 270px;
+    margin-bottom: 48px;
+    .page-title{
+        text-align: center;
+    }
+}
+footer{
+    background: #432;
+    text-align: center;
+    padding: 26px 0;
+    p{
+        color: white;
+        font-size: 0.875rem;
+    }
+}
+article{
+    width: 74%;
+    p{
+       margin-bottom: 1rem;
+    }
+    img{
+       margin-bottom: 20px;
+    }
+}
+aside{
+    width: 22%;
+    p{
+        padding: 12px 10px;
+    }
+}
+.news-contents{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.post-info{
+    position: relative;
+    padding: 4px;
+    margin-bottom: 40px;
+}
+.post-date{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background:#0bd;
+    color: white;
+    font-size: 1.65rem;
+    text-align: center;
+    top: 0;
+    padding-top: 10px;
+    span{
+        font-size: 1rem;
+        border-top: solid 1px rgba(white, 0.5);
+        padding-top: 6px;
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.post-title{
+    font-size: 2rem;
+    font-weight: normal;
+}
+.post-title,.post-cat{
+    margin-left:120px
+}
+.sub-title{
+    font-size: 1.3rem;
+    padding: 0 8px 8px;
+    border-bottom: solid 2px #0bd;
+    font-weight: normal;
+}
+.sub-menu{
+    margin-bottom: 60px;
+    list-style: none;
+    li{
+        border-bottom: 1px solid #ddd;
+    }
+    a{
+        color: #432;
+        padding: 10px;
+        display: block;
+        &:hover{
+            color: #0bd;
+        }
+    }
+}
