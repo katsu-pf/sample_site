@@ -37,4 +37,14 @@ img{
             margin-top: 20px;
         }
     }
+    .page-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-contents{
+        flex-direction: column;
+    }
+    article,aside{
+        width: 100%;
+    }
 }
