@@ -132,7 +132,10 @@ footer p {
 }
 
 article {
-  width: 74%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 60%;
 }
 
 article p {
@@ -144,11 +147,20 @@ article img {
 }
 
 aside {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
   width: 22%;
 }
 
 aside p {
   padding: 12px 10px;
+}
+
+.ad {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .news-contents {

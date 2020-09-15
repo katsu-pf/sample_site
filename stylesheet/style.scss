@@ -114,7 +114,8 @@ footer{
     }
 }
 article{
-    width: 74%;
+    order: 2;
+    width: 60%;
     p{
        margin-bottom: 1rem;
     }
@@ -123,10 +124,14 @@ article{
     }
 }
 aside{
+    order: 3;
     width: 22%;
     p{
         padding: 12px 10px;
     }
+}
+.ad{
+    order: 1;
 }
 .news-contents{
     display: flex;
