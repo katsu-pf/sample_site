@@ -47,4 +47,13 @@ img{
     article,aside{
         width: 100%;
     }
+
+    .big-box{
+        grid-column: auto;
+        grid-row: auto;
+        img{
+            height: 100%;
+        }
+    }
+
 }

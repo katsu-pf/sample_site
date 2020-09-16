@@ -56,5 +56,12 @@ img {
   article, aside {
     width: 100%;
   }
+  .big-box {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .big-box img {
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=res.css.map */

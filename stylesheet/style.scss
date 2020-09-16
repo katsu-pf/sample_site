@@ -82,7 +82,7 @@ img{
     min-height: 100vh;
     //background-color: palevioletred;
     //background-blend-mode: hard-light;
-    background-image: url(./images/main-bg.jpg),radial-gradient(#c9ffbf,#ffafbd);
+    background-image: url(../images/main-bg.jpg),radial-gradient(#c9ffbf,#ffafbd);
     background-blend-mode: luminosity;
     .page-title{
         text-transform: none;
@@ -97,7 +97,7 @@ img{
 //----------------------News--------------------------
 
 #news{
-    background-image: url(./images/news-bg.jpg);
+    background-image: url(../images/news-bg.jpg);
     height: 270px;
     margin-bottom: 48px;
     .page-title{
@@ -190,5 +190,40 @@ aside{
         &:hover{
             color: #0bd;
         }
+    }
+}
+
+//----------Menu-----------------
+#menu{
+    background-image: url(../images/menu-bg.jpg);
+    min-height: 100vh;
+}
+.menu-content{
+    max-width: 560px;
+    margin-top: 10%;
+    .page-title{
+        text-align: center;
+    }
+    p{
+        .menu-content{
+            margin: 10px 0 0;
+        }
+    }
+}
+
+.grid{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+.big-box{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    img{
+        height: 94%;
+        width: 100%;
+        object-fit: cover;
     }
 }
