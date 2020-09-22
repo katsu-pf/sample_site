@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6, p, div{
 body{
     box-sizing: border-box;
     line-height: 1.7;
+    font-family: Verdana;//PC,スマホ共通のゴシック
     color: #432;
 }
 a{
@@ -38,6 +39,7 @@ img{
     text-transform: uppercase;//これで大文字になる
     margin-top: 34px;
     font-size: 1.25rem;
+
     li{
         margin-left: 36px;
     }
@@ -78,12 +80,11 @@ img{
     }
 }
 #home{
-    //background-image: url(./images/main-bg.jpg);
+    background-image: url(../images/main-bg.jpg);
     min-height: 100vh;
     //background-color: palevioletred;
-    //background-blend-mode: hard-light;
-    background-image: url(../images/main-bg.jpg),radial-gradient(#c9ffbf,#ffafbd);
-    background-blend-mode: luminosity;
+    background-color: rgba(44, 221, 0, 0.171);
+    background-blend-mode: hard-light;
     .page-title{
         text-transform: none;
     }
@@ -226,4 +227,76 @@ aside{
         width: 100%;
         object-fit: cover;
     }
+}
+
+//--------------------Contact---------------------
+#contact{
+    background-image: url(../images/contact-bg.jpg);
+    min-height: 100vh;
+}
+//-------forms---------
+form{
+    div{
+        margin-bottom: 14px;
+    }
+}
+label{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],input[type="email"],textarea{
+    background: rgba(255, 255, 255, 0.5);
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 10px;
+}
+input[type="text"],input[type="email"]{
+    width: 100%;
+    max-width: 240px;
+}
+textarea{
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"]{
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+#location{
+    margin: 4% auto;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .location-info{
+        width: 22%;
+        p{
+            padding: 12px 5px;
+        }
+    }
+    .location-map{
+        width: 74%;
+    }
+}
+
+#sns{
+    background-color: #faf7f0;
+    padding: 4% 0;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sub-title{
+        margin-bottom: 30px;
+    }
+    .sns-box{
+        width: 30%;
+        iframe,blockquote{
+            width: 100%;
+        }
+    }
+
 }

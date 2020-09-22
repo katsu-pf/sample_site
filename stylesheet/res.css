@@ -1,29 +1,3 @@
-html, body,
-ul, ol, li,
-h1, h2, h3, h4, h5, h6, p, div {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  line-height: 1.7;
-  color: #432;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-}
-
 @media (max-width: 600px) {
   .page-title {
     font-size: 2.5rem;
@@ -62,6 +36,41 @@ img {
   }
   .big-box img {
     height: 100%;
+  }
+  #contact .page-title {
+    margin-top: 40px;
+  }
+  input[type="text"], input[type="email"], textarea {
+    max-width: 100%;
+  }
+  #location .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #location .wrapper .location-info {
+    width: 90%;
+  }
+  #location .wrapper .location-map iframe {
+    max-width: 100%;
+  }
+  #sns .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #sns .wrapper .sns-box {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=res.css.map */
